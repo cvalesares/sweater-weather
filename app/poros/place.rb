@@ -3,9 +3,7 @@ class Place
               :lng
 
   def initialize(data)
-    @lat = data[:lat]
-    @lng = data[:lng]
-    # @lat = data[:locations].first[:latLng][:lat]
-    # @lng = data[:locations].first[:latLng][:lng]
+    @lat = data[:latLng][:lat]
+    @lng = data[:latLng][:lng]
   end
 end
