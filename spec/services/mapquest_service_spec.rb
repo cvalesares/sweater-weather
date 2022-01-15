@@ -5,7 +5,7 @@ RSpec.describe MapquestService do
     expect(MapquestService.conn).to be_a Faraday::Connection
   end
 
-  it 'parses JSON data into a hash' do
+  it 'parses JSON data into a hash', :vcr do
     address = MapquestService.place("Denver,Co")
 
     expect(address).to be_a Hash
