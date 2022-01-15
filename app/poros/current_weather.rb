@@ -11,11 +11,9 @@ attr_reader :date_time,
             :icon
 
   def initialize(data)
-    #times need to be formatted
-    @date_time = data[:dt]
-    @sunrise = data[:sunrise]
-    @sunset = data[:sunset]
-    #needs to be formatted in fahrenheit
+    @date_time = Time.at(data[:dt]).to_datetime
+    @sunrise = Time.at(data[:sunrise]).to_datetime
+    @sunset = Time.at(data[:sunset]).to_datetime
     @temp = data[:temp]
     @feels_like = data[:feels_like]
     @humidity = data[:humidity]
