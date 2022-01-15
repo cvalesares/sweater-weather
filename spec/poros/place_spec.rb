@@ -2,7 +2,9 @@ require "rails_helper"
 
 RSpec.describe Place do
   before :each do
-    @place = Place.new(lat: 39.738453, lng: -104.984853)
+    @facade = MapquestFacade.place("Denver,Co")
+    @place = @facade.first
+
   end
 
   it 'exists' do

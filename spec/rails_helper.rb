@@ -1,3 +1,4 @@
+require 'webmock/rspec'
 # spec/rails_helper.rb
 require 'simplecov'
 SimpleCov.start
@@ -65,6 +66,14 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data('<mapquest_api_key>') { ENV['mapquest_api_key'] }
+  config.filter_sensitive_data('<open_weather_api_key>') { ENV['open_weather_api_key'] }
+  config.configure_rspec_metadata!
 end
 
 # spec/rails_helper.rb
