@@ -8,11 +8,9 @@ class DailyWeather
               :icon
 
   def initialize(data)
-    #this needs to be formatted to date only
-    @date = data[:dt]
-    @sunrise = data[:sunrise]
-    @sunset = data[:sunset]
-    #needs to be formatted in fahrenheit
+    @date = Time.at(data[:dt]).to_datetime.strftime('%Y-%m-%d')
+    @sunrise = Time.at(data[:sunrise]).to_datetime
+    @sunset = Time.at(data[:sunset]).to_datetime
     @max_temp = data[:temp][:max]
     @min_temp = data[:temp][:min]
     @conditions = data[:weather].first[:description]
