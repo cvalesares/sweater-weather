@@ -6,18 +6,18 @@ RSpec.describe Weather do
   end
 
   describe 'current weather' do
-    it 'exists' do
+    it 'exists', :vcr do
       expect(@current_weather).to be_an_instance_of Weather
     end
 
-    it 'has readable attributes' do
-      #these times need to be parsed and formated (may also need vcr for testing)
-      # expect(@current_weather.date_time).to eq(Time.now)
+    it 'has readable attributes', :vcr do
+      #these times need to be parsed and formated
+      expect(@current_weather.date_time).to eq(1642274358)
       expect(@current_weather.sunrise).to eq(1642256344)
       expect(@current_weather.sunset).to eq(1642291158)
-      expect(@current_weather.temp).to eq(276.69)
-      expect(@current_weather.feels_like).to eq(276.69)
-      expect(@current_weather.humidity).to eq(45)
+      expect(@current_weather.temp).to eq(278.17)
+      expect(@current_weather.feels_like).to eq(277.34)
+      expect(@current_weather.humidity).to eq(44)
       expect(@current_weather.uvi).to eq(2.21)
       expect(@current_weather.visibility).to eq(10000)
       expect(@current_weather.conditions).to eq("clear sky")

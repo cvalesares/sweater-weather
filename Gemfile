@@ -35,13 +35,18 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
   gem 'capybara'
   gem 'launchy'
-  gem 'simplecov'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'orderly'
 end
 
 group :development do
   gem 'listen', '~> 3.3'
+end
+
+group :test do
+  gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
