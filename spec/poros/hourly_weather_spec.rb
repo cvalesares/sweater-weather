@@ -11,8 +11,8 @@ RSpec.describe HourlyWeather do
     end
 
     it 'has readable attributes', :vcr do
-      expect(@hourly_weather.first.time).to eq(1642280400)
-      expect(@hourly_weather.first.temp).to eq(281.39)
+      expect(@hourly_weather.first.time).to eq("16:00:00")
+      expect(@hourly_weather.first.temp).to eq(45.7)
       expect(@hourly_weather.first.conditions).to eq("clear sky")
       expect(@hourly_weather.first.icon).to eq("01d")
     end

@@ -5,10 +5,9 @@ class HourlyWeather
               :icon
 
   def initialize(data)
-    #time and temp need to be reformatted
-    @time = data[:dt]
-    @temp = data[:temp]
-    @conditions = data[:weather].first[:description]
-    @icon = data[:weather].first[:icon]
+    @time         = Time.at(data[:dt]).to_datetime.strftime('%H:%M:%S')
+    @temp         = data[:temp]
+    @conditions   = data[:weather].first[:description]
+    @icon         = data[:weather].first[:icon]
   end
 end

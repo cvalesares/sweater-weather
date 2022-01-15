@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-15T16:24:26-05:00">2022-01-15T16:24:26-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-15T17:08:29-05:00">2022-01-15T17:08:29-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.72
+         2.75
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>201</b> relevant lines,
-    <span class="green"><b>201</b> lines covered</span> and
+    <b>202</b> relevant lines,
+    <span class="green"><b>202</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -95,7 +95,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#88993d415d02c3c67226b87f27e2a9edbe31bae7" class="src_link" title="app/poros/current_weather.rb">app/poros/current_weather.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">27</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
@@ -106,7 +106,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#82e52c1db2f04b11e83fb89ad936ce7e83cc78b2" class="src_link" title="app/poros/daily_weather.rb">app/poros/daily_weather.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">21</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
@@ -117,7 +117,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#18e75066f3a4c159b3607f46758838585cbf9ecf" class="src_link" title="app/poros/hourly_weather.rb">app/poros/hourly_weather.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">14</td>
+            <td class="cell--number">13</td>
             <td class="cell--number">7</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
@@ -150,11 +150,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#97fece72513ce21164e1c0f2114048f56c2df53b" class="src_link" title="app/services/openweather_service.rb">app/services/openweather_service.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">6.50</td>
+            <td class="cell--number">6.82</td>
             
           </tr>
         
@@ -946,13 +946,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="14">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    #times need to be formatted</code>
+            
+
+            <code class="ruby">    @date_time      = Time.at(data[:dt]).to_datetime</code>
           </li>
         </div>
       
@@ -963,7 +963,7 @@
 
             
 
-            <code class="ruby">    @date_time = data[:dt]</code>
+            <code class="ruby">    @sunrise        = Time.at(data[:sunrise]).to_datetime</code>
           </li>
         </div>
       
@@ -974,7 +974,7 @@
 
             
 
-            <code class="ruby">    @sunrise = data[:sunrise]</code>
+            <code class="ruby">    @sunset         = Time.at(data[:sunset]).to_datetime</code>
           </li>
         </div>
       
@@ -985,18 +985,18 @@
 
             
 
-            <code class="ruby">    @sunset = data[:sunset]</code>
+            <code class="ruby">    @temp           = data[:temp]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="18">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    #needs to be formatted in fahrenheit</code>
+            
+
+            <code class="ruby">    @feels_like     = data[:feels_like]</code>
           </li>
         </div>
       
@@ -1007,7 +1007,7 @@
 
             
 
-            <code class="ruby">    @temp = data[:temp]</code>
+            <code class="ruby">    @humidity       = data[:humidity]</code>
           </li>
         </div>
       
@@ -1018,7 +1018,7 @@
 
             
 
-            <code class="ruby">    @feels_like = data[:feels_like]</code>
+            <code class="ruby">    @uvi            = data[:uvi]</code>
           </li>
         </div>
       
@@ -1029,7 +1029,7 @@
 
             
 
-            <code class="ruby">    @humidity = data[:humidity]</code>
+            <code class="ruby">    @visibility     = data[:visibility]</code>
           </li>
         </div>
       
@@ -1040,7 +1040,7 @@
 
             
 
-            <code class="ruby">    @uvi = data[:uvi]</code>
+            <code class="ruby">    @conditions     = data[:weather].first[:description]</code>
           </li>
         </div>
       
@@ -1051,34 +1051,12 @@
 
             
 
-            <code class="ruby">    @visibility = data[:visibility]</code>
+            <code class="ruby">    @icon           = data[:weather].first[:icon]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="24">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @conditions = data[:weather].first[:description]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="25">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @icon = data[:weather].first[:icon]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -1089,7 +1067,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -1241,13 +1219,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
+          <li class="covered" data-hits="15" data-linenumber="11">
+            <span class="hits">15</span>
             
 
-            <code class="ruby">    #this needs to be formatted to date only</code>
+            
+
+            <code class="ruby">    @date         = Time.at(data[:dt]).to_datetime.strftime(&#39;%Y-%m-%d&#39;)</code>
           </li>
         </div>
       
@@ -1258,7 +1236,7 @@
 
             
 
-            <code class="ruby">    @date = data[:dt]</code>
+            <code class="ruby">    @sunrise      = Time.at(data[:sunrise]).to_datetime</code>
           </li>
         </div>
       
@@ -1269,7 +1247,7 @@
 
             
 
-            <code class="ruby">    @sunrise = data[:sunrise]</code>
+            <code class="ruby">    @sunset       = Time.at(data[:sunset]).to_datetime</code>
           </li>
         </div>
       
@@ -1280,18 +1258,18 @@
 
             
 
-            <code class="ruby">    @sunset = data[:sunset]</code>
+            <code class="ruby">    @max_temp     = data[:temp][:max]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
+          <li class="covered" data-hits="15" data-linenumber="15">
+            <span class="hits">15</span>
             
 
-            <code class="ruby">    #needs to be formatted in fahrenheit</code>
+            
+
+            <code class="ruby">    @min_temp     = data[:temp][:min]</code>
           </li>
         </div>
       
@@ -1302,7 +1280,7 @@
 
             
 
-            <code class="ruby">    @max_temp = data[:temp][:max]</code>
+            <code class="ruby">    @conditions   = data[:weather].first[:description]</code>
           </li>
         </div>
       
@@ -1313,34 +1291,12 @@
 
             
 
-            <code class="ruby">    @min_temp = data[:temp][:min]</code>
+            <code class="ruby">    @icon         = data[:weather].first[:icon]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="18">
-            <span class="hits">15</span>
-            
-
-            
-
-            <code class="ruby">    @conditions = data[:weather].first[:description]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="15" data-linenumber="19">
-            <span class="hits">15</span>
-            
-
-            
-
-            <code class="ruby">    @icon = data[:weather].first[:icon]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -1351,7 +1307,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -1470,13 +1426,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
+          <li class="covered" data-hits="24" data-linenumber="8">
+            <span class="hits">24</span>
             
 
-            <code class="ruby">    #time and temp need to be reformatted</code>
+            
+
+            <code class="ruby">    @time         = Time.at(data[:dt]).to_datetime.strftime(&#39;%H:%M:%S&#39;)</code>
           </li>
         </div>
       
@@ -1487,7 +1443,7 @@
 
             
 
-            <code class="ruby">    @time = data[:dt]</code>
+            <code class="ruby">    @temp         = data[:temp]</code>
           </li>
         </div>
       
@@ -1498,7 +1454,7 @@
 
             
 
-            <code class="ruby">    @temp = data[:temp]</code>
+            <code class="ruby">    @conditions   = data[:weather].first[:description]</code>
           </li>
         </div>
       
@@ -1509,23 +1465,12 @@
 
             
 
-            <code class="ruby">    @conditions = data[:weather].first[:description]</code>
+            <code class="ruby">    @icon         = data[:weather].first[:icon]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="12">
-            <span class="hits">24</span>
-            
-
-            
-
-            <code class="ruby">    @icon = data[:weather].first[:icon]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -1536,7 +1481,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -1913,8 +1858,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2058,13 +2003,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="10" data-linenumber="13">
+            <span class="hits">10</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">        req.params[:units] = &quot;imperial&quot;</code>
           </li>
         </div>
       
@@ -2075,12 +2020,23 @@
 
             
 
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="15">
+          <li class="covered" data-hits="10" data-linenumber="16">
             <span class="hits">10</span>
             
 
@@ -2091,7 +2047,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -2102,7 +2058,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -2113,7 +2069,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -5028,7 +4984,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.date_time).to eq(1642277378)</code>
+            <code class="ruby">      expect(@current_weather.date_time).to eq(&quot;Sat, 15 Jan 2022 16:36:23.000000000 -0500&quot;)</code>
           </li>
         </div>
       
@@ -5039,7 +4995,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.sunrise).to eq(1642256344)</code>
+            <code class="ruby">      expect(@current_weather.sunrise).to eq(&quot;Sat, 15 Jan 2022 09:19:04.000000000 -0500&quot;)</code>
           </li>
         </div>
       
@@ -5050,7 +5006,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.sunset).to eq(1642291158)</code>
+            <code class="ruby">      expect(@current_weather.sunset).to eq(&quot;Sat, 15 Jan 2022 18:59:18.000000000 -0500&quot;)</code>
           </li>
         </div>
       
@@ -5061,7 +5017,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.temp).to eq(279.75)</code>
+            <code class="ruby">      expect(@current_weather.temp).to eq(47.05)</code>
           </li>
         </div>
       
@@ -5072,7 +5028,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.feels_like).to eq(278.16)</code>
+            <code class="ruby">      expect(@current_weather.feels_like).to eq(47.05)</code>
           </li>
         </div>
       
@@ -5083,7 +5039,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.humidity).to eq(42)</code>
+            <code class="ruby">      expect(@current_weather.humidity).to eq(44)</code>
           </li>
         </div>
       
@@ -5094,7 +5050,7 @@
 
             
 
-            <code class="ruby">      expect(@current_weather.uvi).to eq(1.97)</code>
+            <code class="ruby">      expect(@current_weather.uvi).to eq(0.64)</code>
           </li>
         </div>
       
@@ -5345,7 +5301,7 @@
 
             
 
-            <code class="ruby">      expect(@daily_weather.first.date).to eq(1642273200)</code>
+            <code class="ruby">      expect(@daily_weather.first.date).to eq(&quot;2022-01-15&quot;)</code>
           </li>
         </div>
       
@@ -5356,7 +5312,7 @@
 
             
 
-            <code class="ruby">      expect(@daily_weather.first.sunrise).to eq(1642256344)</code>
+            <code class="ruby">      expect(@daily_weather.first.sunrise).to eq(&quot;Sat, 15 Jan 2022 09:19:04.000000000 -0500&quot;)</code>
           </li>
         </div>
       
@@ -5367,7 +5323,7 @@
 
             
 
-            <code class="ruby">      expect(@daily_weather.first.sunset).to eq(1642291158)</code>
+            <code class="ruby">      expect(@daily_weather.first.sunset).to eq(&quot;Sat, 15 Jan 2022 18:59:18.000000000 -0500&quot;)</code>
           </li>
         </div>
       
@@ -5378,7 +5334,7 @@
 
             
 
-            <code class="ruby">      expect(@daily_weather.first.max_temp).to eq(279.76)</code>
+            <code class="ruby">      expect(@daily_weather.first.max_temp).to eq(46.99)</code>
           </li>
         </div>
       
@@ -5389,7 +5345,7 @@
 
             
 
-            <code class="ruby">      expect(@daily_weather.first.min_temp).to eq(269.35)</code>
+            <code class="ruby">      expect(@daily_weather.first.min_temp).to eq(25.16)</code>
           </li>
         </div>
       
@@ -5629,7 +5585,7 @@
 
             
 
-            <code class="ruby">      expect(@hourly_weather.first.time).to eq(1642280400)</code>
+            <code class="ruby">      expect(@hourly_weather.first.time).to eq(&quot;16:00:00&quot;)</code>
           </li>
         </div>
       
@@ -5640,7 +5596,7 @@
 
             
 
-            <code class="ruby">      expect(@hourly_weather.first.temp).to eq(281.39)</code>
+            <code class="ruby">      expect(@hourly_weather.first.temp).to eq(45.7)</code>
           </li>
         </div>
       
