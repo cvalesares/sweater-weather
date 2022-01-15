@@ -29,3 +29,5 @@ This app was built using a service-oriented architecture. This backend part of t
 ## Endpoints
 
 ## APIs
+- Mapquest
+- OpenWeather
