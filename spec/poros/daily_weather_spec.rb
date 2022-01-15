@@ -14,8 +14,8 @@ RSpec.describe DailyWeather do
       expect(@daily_weather.first.date).to eq(1642273200)
       expect(@daily_weather.first.sunrise).to eq(1642256344)
       expect(@daily_weather.first.sunset).to eq(1642291158)
-      expect(@daily_weather.first.max_temp).to eq(279.76)
-      expect(@daily_weather.first.min_temp).to eq(269.35)
+      expect(@daily_weather.first.max_temp).to eq(46.99)
+      expect(@daily_weather.first.min_temp).to eq(25.16)
       expect(@daily_weather.first.conditions).to eq("clear sky")
       expect(@daily_weather.first.icon).to eq("01d")
     end
