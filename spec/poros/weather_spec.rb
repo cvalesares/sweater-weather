@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe Weather do
+RSpec.describe CurrentWeather do
   before :each do
     @current_weather = OpenweatherFacade.current_weather(39.738453, -104.984853)
   end
 
   describe 'current weather' do
     it 'exists', :vcr do
-      expect(@current_weather).to be_an_instance_of Weather
+      expect(@current_weather).to be_an_instance_of CurrentWeather
     end
 
     it 'has readable attributes', :vcr do

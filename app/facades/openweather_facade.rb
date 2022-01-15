@@ -1,8 +1,14 @@
 class OpenweatherFacade
 
-  #not sure how I want this data formatted yet
   def self.current_weather(lat, lon)
     payload = OpenweatherService.weather(lat, lon)
-    Weather.new(payload[:current])
+    CurrentWeather.new(payload[:current])
+  end
+
+  def self.daily_weather(lat, lon)
+    payload = OpenweatherService.weather(lat, lon)
+    payload[:daily][0..4].map do |daily|
+      DailyWeather.new(daily)
+    end
   end
 end

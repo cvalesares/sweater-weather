@@ -1,9 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe OpenweatherFacade do
-  it 'it can find current_weather' do
+  it 'can find current weather', :vcr do
     weather = OpenweatherFacade.current_weather(39.738453, -104.984853)
 
-    expect(weather).to be_an_instance_of Weather
+    expect(weather).to be_an_instance_of CurrentWeather
+  end
+
+  it 'can find daily weather', :vcr do
+    weather = OpenweatherFacade.daily_weather(39.738453, -104.984853)
+
+    expect(weather.first).to be_an_instance_of DailyWeather
   end
 end

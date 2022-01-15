@@ -238,43 +238,20 @@
           null
         ]
       },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/weather.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
       "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/facades/openweather_facade.rb": {
         "lines": [
           1,
           null,
+          1,
+          1,
+          1,
+          null,
           null,
           1,
-          2,
-          2,
+          1,
+          1,
+          5,
+          null,
           null,
           null
         ]
@@ -300,8 +277,64 @@
           null,
           null
         ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/current_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/daily_weather.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          5,
+          5,
+          5,
+          null,
+          5,
+          5,
+          5,
+          5,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1642274449
+    "timestamp": 1642276962
   }
 }
