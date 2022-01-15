@@ -5,7 +5,7 @@ RSpec.describe OpenweatherService do
     expect(OpenweatherService.conn).to be_a Faraday::Connection
   end
 
-  it 'parses JSON data into a hash' do
+  it 'parses JSON data into a hash', :vcr do
     weather = OpenweatherService.weather(39.738453, -104.984853)
 
     expect(weather).to be_a Hash

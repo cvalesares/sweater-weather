@@ -1,4 +1,4 @@
-class Weather
+class CurrentWeather
 attr_reader :date_time,
             :sunrise,
             :sunset,
@@ -11,9 +11,11 @@ attr_reader :date_time,
             :icon
 
   def initialize(data)
+    #times need to be formatted
     @date_time = data[:dt]
     @sunrise = data[:sunrise]
     @sunset = data[:sunset]
+    #needs to be formatted in fahrenheit
     @temp = data[:temp]
     @feels_like = data[:feels_like]
     @humidity = data[:humidity]
