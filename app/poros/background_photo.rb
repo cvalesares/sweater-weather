@@ -9,7 +9,7 @@ class BackgroundPhoto
   def initialize(data)
     @location   = data[:user][:location]
     @image_url  = data[:urls][:raw]
-    @author     = data[:user][:first_name].concat(" ", data[:user][:last_name])
+    @author     = data[:user][:name].concat(" on Upsplash")
     @logo       = data[:user][:profile_image][:small]
     @download   = data[:links][:download]
   end

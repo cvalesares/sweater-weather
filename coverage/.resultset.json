@@ -216,7 +216,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -233,8 +233,26 @@
           1,
           1,
           1,
+          1,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/controllers/api/v1/backgrounds_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -292,6 +310,6 @@
         ]
       }
     },
-    "timestamp": 1642359338
+    "timestamp": 1642361985
   }
 }
