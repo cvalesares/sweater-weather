@@ -16,7 +16,7 @@ class OpenweatherFacade
       payload = OpenweatherService.weather(lat, lon)
       payload[:hourly][0..7].map do |hourly|
         HourlyWeather.new(hourly)
-      end 
+      end
     end
   end
 end

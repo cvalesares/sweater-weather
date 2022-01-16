@@ -216,7 +216,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -229,12 +229,32 @@
         "lines": [
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
           1,
           1,
           null,
           1,
           null,
-          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
           null
         ]
       },
@@ -242,34 +262,43 @@
         "lines": [
           1,
           1,
-          3,
-          3,
-          3,
+          1,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/facades/openweather_facade_spec.rb": {
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/services/mapquest_service.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
           1,
           null,
+          1,
           1,
           null,
           null,
           1,
           1,
+          1,
+          1,
           null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/place.rb": {
+        "lines": [
+          1,
           1,
           null,
           null,
           1,
           1,
-          null,
           1,
           null,
           null
@@ -280,53 +309,45 @@
           1,
           1,
           1,
-          3,
-          3,
+          1,
+          1,
           null,
           null,
           1,
-          3,
-          3,
-          15,
+          1,
+          1,
+          5,
           null,
           null,
           null,
           1,
-          3,
-          3,
-          24,
+          1,
+          1,
+          8,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/poros/current_weather_spec.rb": {
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/services/openweather_service.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
           1,
           null,
           1,
+          3,
+          null,
+          null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null,
+          3,
           null,
           null,
           null
@@ -346,34 +367,6 @@
           null,
           null,
           null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/poros/daily_weather_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
           null,
           1,
           1,
@@ -383,7 +376,9 @@
           1,
           1,
           1,
-          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -399,38 +394,15 @@
           null,
           null,
           null,
-          1,
-          15,
-          15,
-          15,
-          15,
-          15,
-          15,
-          15,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/poros/hourly_weather_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
           null,
           null
         ]
@@ -443,131 +415,17 @@
           null,
           null,
           null,
-          1,
-          24,
-          24,
-          24,
-          24,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/poros/place_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/place.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/services/mapquest_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/services/mapquest_service.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          5,
-          null,
-          null,
-          1,
-          4,
-          4,
-          4,
-          null,
-          null,
-          4,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/spec/services/openweather_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/services/openweather_service.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          11,
-          null,
-          null,
-          1,
-          10,
-          10,
-          10,
-          10,
-          10,
-          null,
-          null,
-          10,
-          null,
+          8,
+          8,
+          8,
+          8,
           null,
           null
         ]
       }
     },
-    "timestamp": 1642284509
+    "timestamp": 1642318064
   }
 }

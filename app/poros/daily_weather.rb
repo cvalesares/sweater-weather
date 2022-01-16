@@ -5,7 +5,8 @@ class DailyWeather
               :max_temp,
               :min_temp,
               :conditions,
-              :icon
+              :icon,
+              :id
 
   def initialize(data)
     @date         = Time.at(data[:dt]).to_datetime.strftime('%Y-%m-%d')

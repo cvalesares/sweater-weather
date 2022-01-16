@@ -8,7 +8,8 @@ attr_reader :date_time,
             :uvi,
             :visibility,
             :conditions,
-            :icon
+            :icon,
+            :id
 
   def initialize(data)
     @date_time      = Time.at(data[:dt]).to_datetime
