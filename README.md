@@ -27,7 +27,13 @@ This app was built using a service-oriented architecture. This backend part of t
 * Run your development server with `rails s` to see the app in action!
 
 ## Endpoints
+Internal APIs:
+- Returns a forecast with current, daily, and hourly weather conditions for a location param
+    *  `http://localhost:3000/api/v1/forecast?location={location}`
+- Returns a background photo of the location param
+    *  `http://localhost:3000/api/v1/backgrounds?location={location}`
 
 ## APIs
 - Mapquest
 - OpenWeather
+- Unsplash
