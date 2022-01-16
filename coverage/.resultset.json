@@ -238,13 +238,25 @@
           null
         ]
       },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/facades/unsplash_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          10,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/services/unsplash_service.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          2,
+          1,
           null,
           null,
           1,
@@ -258,8 +270,28 @@
           null,
           null
         ]
+      },
+      "/Users/christianvalesares/mod3/projects/sweater_weather/sweater_weather/app/poros/background_photo.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1642356207
+    "timestamp": 1642359338
   }
 }
