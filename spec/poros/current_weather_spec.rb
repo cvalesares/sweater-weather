@@ -11,7 +11,6 @@ RSpec.describe CurrentWeather do
     end
 
     it 'has readable attributes', :vcr do
-      #these times need to be parsed and formated
       expect(@current_weather.date_time).to eq("Sat, 15 Jan 2022 16:36:23.000000000 -0500")
       expect(@current_weather.sunrise).to eq("Sat, 15 Jan 2022 09:19:04.000000000 -0500")
       expect(@current_weather.sunset).to eq("Sat, 15 Jan 2022 18:59:18.000000000 -0500")
