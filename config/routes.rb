@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :forecast, only: :index
       resources :backgrounds, only: :index
       resources :users, only: :create
+      post "sessions", to: "users#login"
     end
   end
 end
