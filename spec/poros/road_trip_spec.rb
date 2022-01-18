@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe RoadTrip do
   before :each do
     @route = MapquestFacade.road_trip("New York, NY", "Los Angeles, CA")
+    @badroute = MapquestFacade.road_trip("New York, NY", "London, UK")
   end
 
   it 'exists', :vcr do
@@ -15,5 +16,11 @@ RSpec.describe RoadTrip do
     expect(@route.travel_time).to eq("40:16:00")
     expect(@route.hourly_weather.count).to eq(48)
     expect(@route.hours_traveled).to eq("40")
+  end
+
+  it 'returns a bad road trip if no valid route', :vcr do
+    expect(@badroute.travel_time).to eq("impossible")
+    expect(@badroute.hourly_weather).to eq("")
+    expect(@badroute.hours_traveled).to eq("")
   end
 end
