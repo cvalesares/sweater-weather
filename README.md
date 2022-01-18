@@ -2,7 +2,7 @@
 
 Sweater Weather (5 day solo sprint project)
 -------------------------------------------
-![Christian Valesares](https://github.com/cvalesares)
+[Christian Valesares](https://github.com/cvalesares)
 
 Sweater Weather is an application that can be used to plan road trips. This app allows the user to see current weather conditions as well as forecasted weather conditions at the destination at the time of arrival.
 
@@ -150,7 +150,7 @@ This app was built using a service-oriented architecture. This backend part of t
             ]
         }
     }
-}
+
     ```
 - Returns a background photo of the location param
     *  GET `http://localhost:3000/api/v1/backgrounds?location={location}`
@@ -171,7 +171,7 @@ This app was built using a service-oriented architecture. This backend part of t
             }
         }
     }
-}
+
     ```
 - Returns details of a created road trip based off of user input
     *  POST `http://localhost:3000/api/v1/road_trip`
@@ -193,7 +193,7 @@ This app was built using a service-oriented architecture. This backend part of t
             }
         }
     }
-}
+
     ```
 - Creates a new user
     * POST `http://localhost:3000/api/v1/users`
@@ -210,7 +210,7 @@ This app was built using a service-oriented architecture. This backend part of t
             "api_key": "yhzaemeyhswnvkjbxpdxvvffginvdxjqvxxltobompdrtzsyjd"
         }
     }
-}
+
     ```
 - Logs in an existing user
   * POST `http://localhost:3000/api/v1/sessions`
@@ -227,7 +227,7 @@ This app was built using a service-oriented architecture. This backend part of t
             "api_key": "yhzaemeyhswnvkjbxpdxvvffginvdxjqvxxltobompdrtzsyjd"
         }
     }
-}
+
   ```
 
 ## APIs
