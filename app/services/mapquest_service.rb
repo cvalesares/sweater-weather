@@ -14,7 +14,7 @@ class MapquestService
       JSON.parse(response.body, symbolize_names: true)
     end
 
-    def route(start, finish)
+    def road_trip(start, finish)
       response = conn.get("/directions/v2/route") do |req|
         req.params[:key] = ENV["mapquest_api_key"]
         req.params[:from] = start

@@ -7,9 +7,9 @@ class MapquestFacade
       end
     end
 
-    def route(start, finish)
-      payload = MapquestService.route(start, finish)
-      Route.new(payload[:route], start, finish)
+    def road_trip(start, finish)
+      payload = MapquestService.road_trip(start, finish)
+      RoadTrip.new(payload[:route], start, finish)
     end
   end
 end

@@ -8,9 +8,9 @@ RSpec.describe MapquestFacade do
   end
 
   it 'can create a route object from json', :vcr do
-    route = MapquestFacade.route("New York, NY", "Los Angeles, CA")
+    route = MapquestFacade.road_trip("New York, NY", "Los Angeles, CA")
 
-    expect(route).to be_an_instance_of Route
+    expect(route).to be_an_instance_of RoadTrip
   end
 
   #maybe add more sad path testing here for invalid route

@@ -18,5 +18,12 @@ class OpenweatherFacade
         HourlyWeather.new(hourly)
       end
     end
+
+    def hourly_weather_uncapped(lat, lon)
+      payload = OpenweatherService.weather(lat, lon)
+      payload[:hourly].map do |hourly|
+        HourlyWeather.new(hourly)
+      end
+    end
   end
 end

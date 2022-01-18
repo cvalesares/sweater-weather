@@ -13,7 +13,7 @@ RSpec.describe MapquestService do
   end
 
   it 'can find a route', :vcr do
-    route = MapquestService.route("New York, NY", "Los Angeles, CA")
+    route = MapquestService.road_trip("New York, NY", "Los Angeles, CA")
 
     expect(route).to be_a Hash
     expect(route).to have_key :route
