@@ -6,7 +6,8 @@ class OpenlibraryService
     end
 
     def books(city, limit)
-      response = conn.get("/subjects/denver.json") do |req|
+      response = conn.get("/search.json") do |req|
+        req.params[:q] = city
         req.params[:limit] = limit
       end
 

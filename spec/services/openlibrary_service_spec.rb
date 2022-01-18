@@ -9,6 +9,6 @@ RSpec.describe OpenlibraryService do
     books = OpenlibraryService.books("Denver", 5)
 
     expect(books).to be_a Hash
-    expect(books).to have_key :works
+    expect(books).to have_key :docs
   end
 end
