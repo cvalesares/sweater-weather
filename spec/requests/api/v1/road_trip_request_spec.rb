@@ -37,4 +37,17 @@ RSpec.describe 'Roadtrip Request' do
     expect(response.status).to eq(401)
     expect(response.body).to eq("Please enter valid credentials")
   end
+
+  it 'returns an error if no route is available', :vcr do
+    user = User.create!(email: 'pleasework@gmail.com', password: 'password123', password_confirmation: 'password123', api_key: 'raahahfpmmvtcvhzlztulkqwjcuernyjjbzwzzisqrdovaxfrz')
+
+    roadtrip_params = {
+      origin: "Denver, CO",
+      destination: "London, UK",
+      api_key: "raahahfpmmvtcvhzlztulkqwjcuernyjjbzwzzisqrdovaxfrz"
+    }
+    headers = {"CONTENT_TYPE" => "application/json"}
+
+    post "/api/v1/road_trip", headers: headers, params: JSON.generate(roadtrip_params)
+  end
 end
