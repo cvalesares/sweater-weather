@@ -2,7 +2,7 @@
 
 Sweater Weather (5 day solo sprint project)
 -------------------------------------------
-### Christian Valesares
+![Christian Valesares](https://github.com/cvalesares)
 
 Sweater Weather is an application that can be used to plan road trips. This app allows the user to see current weather conditions as well as forecasted weather conditions at the destination at the time of arrival.
 
@@ -11,7 +11,7 @@ Sweater Weather is an application that can be used to plan road trips. This app 
 This app was built using a service-oriented architecture. This backend part of the app is responsible for exposing data for the front-end to consume and display to our end users.
 
 ## Schema
-![Imgur](https://imgur.com/jbJPcss)
+![Imgur](https://imgur.com/a/MbvC8U8)
 
 ## Tools Used:
 
