@@ -4,7 +4,7 @@ class Book
               :publisher
 
   def initialize(data)
-    @isbn = data[:isbn].first
+    @isbn = data[:isbn]
     @title = data[:title]
     @publisher = data[:publisher]
   end

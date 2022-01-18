@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T12:25:02-05:00">2022-01-18T12:25:02-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-01-18T13:44:03-05:00">2022-01-18T13:44:03-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -2965,7 +2965,7 @@
 
             
 
-            <code class="ruby">    @isbn = data[:isbn].first</code>
+            <code class="ruby">    @isbn = data[:isbn]</code>
           </li>
         </div>
       
@@ -8948,7 +8948,7 @@
 
             
 
-            <code class="ruby">    expect(@book.first.isbn).to eq(&quot;0517215039&quot;)</code>
+            <code class="ruby">    expect(@book.first.isbn).to eq([&quot;0517215039&quot;, &quot;9780517623619&quot;, &quot;9780517215036&quot;, &quot;0517623617&quot;])</code>
           </li>
         </div>
       
@@ -10848,7 +10848,7 @@
 
             
 
-            <code class="ruby">    expect(results[:books].first[:isbn]).to eq(&quot;0517215039&quot;)</code>
+            <code class="ruby">    expect(results[:books].first[:isbn]).to eq([&quot;0517215039&quot;, &quot;9780517623619&quot;, &quot;9780517215036&quot;, &quot;0517623617&quot;])</code>
           </li>
         </div>
       

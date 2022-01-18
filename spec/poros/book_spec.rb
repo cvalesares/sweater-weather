@@ -10,7 +10,7 @@ RSpec.describe Book do
   end
 
   it 'has readable attributes', :vcr do
-    expect(@book.first.isbn).to eq("0517215039")
+    expect(@book.first.isbn).to eq(["0517215039", "9780517623619", "9780517215036", "0517623617"])
     expect(@book.first.title).to eq("Denver")
     expect(@book.first.publisher).to eq(["Crescent Books", "Random House Value Publishing", "Distributed by Crown Publishers", "Crescent"])
   end
