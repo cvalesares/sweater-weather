@@ -8,6 +8,8 @@ Rails.application.routes.draw do
       resources :users, only: :create
       post "sessions", to: "users#login"
       resources :road_trip, only: :create
+
+      get "book-search", to: "book_search#index"
     end
   end
 end
