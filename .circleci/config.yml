@@ -24,10 +24,10 @@ jobs:
           command: bundle install
       - run: 
           name: Install Rubocop
-          command: bundle exec gem install rubocop
+          command: gem install rubocop
       - run:
           name: Rubocop
-          command: bundle exec rubocop
+          command: rubocop
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
