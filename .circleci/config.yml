@@ -11,13 +11,9 @@ jobs:
       - image: cimg/base:stable
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+
     steps:
       - checkout
-      - run:
-          name: Set ruby version to 2.7.2
-          command: |
-              rvm install 2.7.2
-              echo . $(rvm 2.7.2 do rvm env --path) >> $BASH_ENV
       - run:
           name: Install Bundler
           command: |
