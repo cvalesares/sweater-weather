@@ -27,7 +27,7 @@ jobs:
           command: gem install rubocop
       - run:
           name: Rubocop
-          command: rubocop
+          command: bundle exec rspec
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
