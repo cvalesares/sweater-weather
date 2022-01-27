@@ -19,6 +19,9 @@ jobs:
           command: |
             sudo apt update
             sudo apt install bundler
+      - run: 
+          name: Install Rubocop
+          command: gem install rubocop
       - run:
           name: Rubocop
           command: bundle exec rubocop
