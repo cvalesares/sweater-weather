@@ -15,17 +15,20 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Force Bundler Version
-          command: gem install bundler -v '~> 2.3.4'
-      - run:
-          name: Which bundler?
-          command: bundle -v
-      - run: # Install Ruby dependencies
-          name: Bundle Install
-          command: bundle install
-      - run:
-          name: "Test"
-          command: "bundle exec rspec"
+          name: RSpec
+          command: |
+            mkdir /tmp/test-results
+            TEST_FILES="$(circleci tests glob "spec/_spec.rb" |
+              circleci tests split --split-by=timings)"
+            bundle exec rspec
+              --format progress
+              --format RspecJunitFormatter
+              --out /tmp/test-results/rspec.xml
+              --format progress
+              $TEST_FILES
+
+      - store_test_results:
+          path: /tmp/test-results
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
